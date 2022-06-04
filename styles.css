@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+.carousel {
+    max-width: 600px;
+    position: relative;
+    margin-top: 8%;
+    margin-left: 28%;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+}
+
+.carousel .carousel__item .carousel_content {
+    width: 500px;
+    max-width: 600px;
+    height: 300px;
+    background-color: blanchedalmond;
+    padding: 30px;
+    border-radius: 20px;
+    border-color:rgba(113, 108, 111, 1) ;
+    border-style: solid;
+}
+
+.carousel .carousel__item .carousel_content h1{
+    position: relative;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    padding-top: 5px;
+    top: -15%;
+    font-size: 35px;
+}
+
+.carousel .carousel__item .carousel_content .Description{
+    position: relative;
+    word-wrap: normal;
+    top: -20%;
+    font-family: 'Rufina', serif;
+    font-size: 25px;
+    padding-top: 12px;
+    padding-left: 16px;
+
+}
+
+.carousel .carousel__item .carousel_content .Description_hobbies {
+    position: relative;
+    word-wrap: normal;
+    top: -20%;
+    font-family: 'Rufina', serif;
+    font-size: 24.37px;
+    padding-top: 0px;
+    top: -22%;
+    padding-left: 16px;
+
+}
+
+.carousel .carousel__item .carousel_content .Description_philo {
+    position: relative;
+    word-wrap: normal;
+    top: -20%;
+    font-family: 'Rufina', serif;
+    font-size: 22.4px;
+    padding-top: 0px;
+    top: -22%;
+    padding-left: 16px;
+
+}
+
+p.poem{
+    display: inline-flex;
+    position: relative;
+    margin-left: 49px;
+    margin-top: 18px;
+    margin-right: 60px;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    top: -34%;
+    font-family: 'Space Mono', monospace;
+    font-size: 15.7px;
+    border-radius: 10px;
+    border-color: rgb(55, 3, 3);
+    background-color: darksalmon;
+    border-style: dotted;
+}
+
+.carousel .carousel__item .carousel_content img{
+    position: absolute;
+    width: 100px;
+    height: 210px;
+    bottom: 0;
+    left: -50px;
+    top: 159px;
+
+}
+
+.carousel .carousel__item .carousel_content img:hover{
+    transform: translateX(20%);
+}
+
+.carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 20px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(113, 108, 111, 0.49);
+    
+}
+
+.carousel .carousel__actions button#carousel__button--prev {
+    margin-left: 250px;
+    margin-top: 300px;
+}
+
+.carousel .carousel__actions button#carousel__button--next {
+    position: inherit;
+    margin-left: 290px;
+    margin-top: 300px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+        transform: opacity linear;
+    }
+
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+body{
+    background-image: url("background_img.jpg");
+    background-size: cover;
+}
+ 
+.links{
+    font-size: 60px;
+    margin-right: 20px;
+    text-decoration: none;
+    position: relative;
+    left: 14%;
+    top: 20px;
+    z-index: 20000;
+}
+
+.fb{
+    color: blue;
+}
+.wa{
+    color: green;
+}
+.github{
+    color: rgb(0, 0, 0);
+}
+.insta{
+    color:rgb(112, 7, 56);
+}
